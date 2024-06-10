@@ -1,0 +1,333 @@
+
+<main class="page-wrapper" *ngIf="company">
+    <!-- Header-->
+    <app-header id="top"></app-header>
+    <section class="container-fluid mt-0 mb-lg-1 mb-0 pt-5 pb-lg-1 pr-0 mt-5">
+        <div class="row">
+            <aside class="col-lg-3" *ngIf="isLeftColumnFixed">
+            </aside>
+            <aside class="col-lg-3 col-md-5 pe-xl-4 mb-5 mt-3 display-none-before-992px" [ngClass]="{'fixed': isLeftColumnFixed}">
+                <!-- Account nav-->
+                <div class="d-none d-lg-flex flex-column p-3 align-items-center bg-dark rounded-top" >
+                  <p class="h2 mb-0 text-light">Seitenmenü</p>
+                </div>
+                <div class="card card-body border-0 shadow-sm pb-1 me-lg-1">    
+                  <a class="btn btn-outline-secondary d-block d-md-none w-100 mb-3"
+                    href="javascript:void(0);" data-bs-toggle="collapse" (click)="SideBarMenu()"><i
+                      class="fi-align-justify me-2"></i>Menu</a>
+                  <div class="collapse d-md-block mt-3" id="account-nav">
+                    <div class="card-nav custom-nav-scroll">
+                      <a class="card-nav-link active" routerLink="/account/info"><i class="fi-user opacity-60 me-2"></i>Personal
+                        Info</a>
+                      <a class="card-nav-link" routerLink="/account/security"><i class="fi-lock opacity-60 me-2"></i>Password
+                        &amp; Security</a>
+                      <a class="card-nav-link" routerLink="/account/properties"><i class="fi-home opacity-60 me-2"></i>My
+                        Properties</a>
+                      <a class="card-nav-link" routerLink="/account/wishlist"><i class="fi-heart opacity-60 me-2"></i>Wishlist</a>
+                      <a class="card-nav-link" routerLink="/account/reviews"><i class="fi-star opacity-60 me-2"></i>Reviews</a>
+                      <a class="card-nav-link" routerLink="/account/notifications"><i
+                          class="fi-bell opacity-60 me-2"></i>Notifications</a>
+                      <a class="card-nav-link" routerLink="/pages/help-center"><i class="fi-help opacity-60 me-2"></i>Help</a>
+                      <a class="card-nav-link" routerLink="/auth/signin"><i class="fi-logout opacity-60 me-2"></i>Sign Out</a>
+                      <a class="card-nav-link" routerLink="/account/wishlist"><i class="fi-heart opacity-60 me-2"></i>Wishlist sfsf wefwfwef wefwfwfew wefwfwfew wefwfwef</a>
+                      <a class="card-nav-link" routerLink="/account/reviews"><i class="fi-star opacity-60 me-2"></i>Reviews</a>
+                      <a class="card-nav-link" routerLink="/account/notifications"><i
+                          class="fi-bell opacity-60 me-2"></i>Notifications</a>
+                          <a class="card-nav-link" routerLink="/account/wishlist"><i class="fi-heart opacity-60 me-2"></i>Wishlist</a>
+                      <a class="card-nav-link" routerLink="/account/reviews"><i class="fi-star opacity-60 me-2"></i>Reviews</a>
+                      <a class="card-nav-link" routerLink="/account/notifications"><i
+                          class="fi-bell opacity-60 me-2"></i>Notifications</a>
+                    </div>
+                  </div>
+                </div>
+            </aside>
+
+
+            <div class="col-lg-9">
+                <div class="pt-2 pb-2 ml-0 pl-0">
+                    <h1 class="custom-art-color-light mt-2 h2 mb-0">{{ company.title }}</h1>
+                </div>
+                <!-- Breadcrumb-->
+                <app-breadcrumbs [breadcrumbItems]="breadCrumbItems">
+                </app-breadcrumbs>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Gallery-->
+                        <section class="container overflow-auto ms-0 ps-0 mb-4 pb-3 mt-0 pt-0" data-simplebar>
+                            <div class="row g-2 g-md-3 gallery" data-thumbnails="true" style="min-width: 30rem;">
+                                <div class="flex-column">
+                              
+                                            <div class="mb-2" *ngFor="let image of company.photos; let i = index">
+                                                <div *ngIf="image.photoName === '1'">
+                                                    <a class="gallery-item rounded rounded-md-3" style="height: 320px;"  (click)="openCompaniesPhotoInLightBox(0)">
+                                                        <img class="h-100" [src]="image.photoLink" [alt]="image.photoName">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row g-2 g-md-2">
+                                                    <div class="col-2 mt-3" *ngFor="let image of company.photos; let i = index">
+                                                        <ng-container *ngIf="i <= 5">
+                                                            <a class="gallery-item rounded-1 rounded-md-2" role="button" (click)="openCompaniesPhotoInLightBox(i)">
+                                                                <img class="thumbnails" [src]="image.photoLink" alt="Gallery thumbnail">
+                                                            </a>
+                                                        </ng-container>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <h3 class=" h4 text-primary">Angeboten:</h3>
+                                <!-- Vertical tabs -->
+                                <ng-container *ngFor="let offer of company.offers">
+                                    <ul class="col-12 nav nav-tabs flex-column pe-4" role="tablist">
+                                        <li class="nav-item position-relative ms-5">
+                                        <a class="nav-link custom-active d-flex justify-content pb-1" data-bs-toggle="tab"  role="button" (click)="scrollToOfferBlock(offer.offerId)">
+                                            <div class="col-1 p-0 m-0"><span class="material-symbols-outlined fs-4">category</span></div>
+                                            <div  class="col-10 mb-3"><p class="p-1 m-0">{{ offer.title }}</p></div>
+                                            <span class="badge text-dark position-absolute bottom-0 end-0">bis 8 Personen</span>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </ng-container>
+                            </div>
+                            <!-- Company description Overview-->
+                            <div class="mb-4 pb-md-3">
+                                <div class="mb-4 pb-md-3">
+                                    <h3 class="h4">Overview</h3>
+                                    <p class="mb-1">
+                                        <span>
+                                            {{ company.description.slice(0, limitCompanyDescription) }}
+                                        </span>
+                                        <span *ngIf="company.description.length > limitCompanyDescription" class="collapse" id="seeMoreOverview" [ngClass]="{'show': companyDescriptionExpanded}">
+                                            {{ company.description.slice(limitCompanyDescription) }}
+                                        </span>
+                                    </p>
+                                    <a class="collapse-label collapsed" (click)="toggleCompanyDescriptionLength()" 
+                                    [attr.aria-expanded]="companyDescriptionExpanded ? 'true' : 'false'" 
+                                    data-bs-toggle="collapse" [attr.data-bs-label-collapsed]="companyDescriptionExpanded ? 'Show less' : 'Show more'" 
+                                    [attr.data-bs-label-expanded]="companyDescriptionExpanded ? 'Show less' : 'Show more'" 
+                                    role="button" aria-expanded="false" aria-controls="seeMoreOverview"></a>
+                                </div>
+                            </div>
+                            
+                        </section>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-1">
+                                <span class="material-symbols-outlined fs-3">
+                                monetization_on
+                                </span>
+                            </div>
+                            <div class="col-10">
+                                <div *ngFor="let price of company.prices">
+                                    <div *ngIf="price.name == 'min-offer-price'">
+                                        <p class="mt-2">von {{ price.price }} Euro / {{ price.unit }} / {{ price.info }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr  class="mb-2">
+                        <app-company-phone [phone]="company.phone"></app-company-phone>
+                        <hr class="mt-2 mb-4">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fi-map-pin fs-4 mb-1"></i>
+                            </div>
+                            <div class="col-2">
+                                <p class="m-1 fw-bold">Straße:</p>
+                                <p class="m-1 fw-bold">PLZ/Ort:</p>
+                                <p class="m-1 fw-bold">Land:</p>
+                            </div>
+                            <div class="col-9">
+                                <p class="m-1">{{ company.street }} {{ company.house }}</p>
+                                <p class="m-1">{{ company.postCode }}, {{ company.city }}</p>
+                                <p class="m-1">{{ company.land }}</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fi-geo fs-4 mb-1 me-2 text-primary"></i>
+                            </div>
+                            <div class="col-7 pt-1">
+                                <a  href="">Auf der Karte anzeigen</a>
+                            </div>
+                        </div>
+                        <hr class="mt-2 mb-2">
+                        <!--characteristics from reference-->
+                        <div id="elementId" class="mb-4 mt-4 pb-md-3">
+                            <div [style.height]="containerHeight" style="overflow: hidden">
+                                <ng-container *ngFor="let cat of getUniqCompanyCharCategory()">
+                                    <!-- Schow category -->
+                                    <h4 class="mt-4">{{ cat | charCategoryTransformToValue | async}}</h4>        
+                                    <!-- schow all char for actual category -->
+                                    <ul class="list-unstyled row row-cols-lg-2 row-cols-md-2 row-cols-1 gy-1 mb-1 text-nowrap">
+                                            <ng-container *ngFor="let characteristic of company.companyCharacteristics">
+                                                <ng-container *ngIf="characteristic.charCategory === cat">
+                                                    <li class="col row">
+                                                        <div class="col-1"><span class="material-symbols-outlined fs-4">{{ characteristic.icon}}</span></div>
+                                                        <div class="col-10"><p class="p-1 m-0">{{ (characteristic | charTransformToValue | async) || 'Нет данных' }}</p></div>
+                                                    </li>
+                                                </ng-container>
+                                            </ng-container>
+                                    </ul>
+                                </ng-container>
+                            </div>
+                            <br>
+                            <a class="collapse-label collapsed" role="button" *ngIf="!isExpanded" (click)="toggleMoreCompanyChar()">Show more</a>
+                            <a class="collapse-label collapsed" role="button" *ngIf="isExpanded" (click)="toggleLessCompanyChar()">Show less</a>
+                        </div>
+                    </div>
+                     <!-- all images
+                     <div class="row gallery g-0" data-video="true">              
+                        <div *ngFor="let image of company.photos; let index = index" class="col-xl-4 col-sm-6 border border-light">
+                            <a class="gallery-item" href="javascript:void(0);" (click)="openCompaniesPhotoInLightBox(index)">
+                                <img [src]="image.photoLink" alt="Gallery thumbnail">
+                                <span class="gallery-item-caption">Gallery image caption</span>
+                            </a>
+                        </div>
+                    </div>
+                    -->          
+                </div>
+                <!-- Offer block-->
+                <div class="row" *ngFor="let offer of company.offers">
+                    <section  id="offerId-{{ offer.offerId }}" class="mb-5">
+                        <br><br><br>
+                    </section>
+                    <hr class="border border-primary p-1 bg-primary mb-4">
+                    <!-- Offer header-->
+                    <section class="container  mt-5">
+                        <h1 class="h2 mb-2">{{ offer.title }}</h1>
+                        <!-- Features + Sharing-->
+                        <div class="d-flex justify-content-between align-items-center">
+                        <ul class="d-flex mb-4 list-unstyled">
+                            <li class="me-3 pe-3 border-end"><b class="me-1">public Platz</b>
+                            </li>
+                            <li class="me-3 pe-3 border-end"><b class="me-1">bis 123 Personen</b>
+                            </li>
+                            <li class="me-3 pe-3 border-end"><b class="me-1">2</b><i class="fi-car mt-n1 lead align-middle text-muted"></i>
+                            </li>
+                            <li><b>56 </b>sq.m</li>
+                        </ul>
+                        <div class="text-nowrap">
+                            <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2" type="button" placement="top" ngbTooltip="Add to Wishlist"><i class="fi-heart"></i></button>
+                            <div class="dropdown d-inline-block" placement="top" ngbTooltip="Share">
+                            <button class="btn btn-icon btn-light-primary btn-xs shadow-sm rounded-circle ms-2 mb-2" type="button" data-bs-toggle="dropdown"><i class="fi-share"></i></button>
+                            <div class="dropdown-menu dropdown-menu-end my-1">
+                                <button class="dropdown-item" type="button"><i class="fi-facebook fs-base opacity-75 me-2"></i>Facebook</button>
+                                <button class="dropdown-item" type="button"><i class="fi-twitter fs-base opacity-75 me-2"></i>Twitter</button>
+                                <button class="dropdown-item" type="button"><i class="fi-instagram fs-base opacity-75 me-2"></i>Instagram</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    <!-- Offer Gallery-->
+                    <section class="container overflow-auto mb-4 pb-3" data-simplebar>
+                        <div class="row g-2 g-md-3 gallery" data-thumbnails="true" style="min-width: 30rem;">
+                            <div class="col-8">
+                                <a class="gallery-item rounded rounded-md-3" role="button"  (click)="openOffersPhotoInLightBox(offer.offerId, 0)">
+                                <img [src]="offer.photoOffers[0].photoLink" [alt]="offer.photoOffers[0].photoName">
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a class="gallery-item rounded rounded-md-3 mb-2 mb-md-3" role="button"  (click)="openOffersPhotoInLightBox(offer.offerId, 1)">
+                                    <img [src]="offer.photoOffers[1].photoLink" [alt]="offer.photoOffers[0].photoName">
+                                </a>
+                                <a class="gallery-item rounded rounded-md-3" role="button"  (click)="openOffersPhotoInLightBox(offer.offerId, 2)">
+                                    <img [src]="offer.photoOffers[2].photoLink" [alt]="offer.photoOffers[0].photoName">
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-2 g-md-3">
+                                    <div class="col" *ngFor="let index of [3, 4, 5, 6, 7]">
+                                        <ng-container *ngIf="index < offer.photoOffers.length; else emptyPhotoBox">
+                                            <a class="gallery-item rounded-1 rounded-md-2" role="button"  (click)="openOffersPhotoInLightBox(offer.offerId, index)">
+                                                <img [src]="offer.photoOffers[index].photoLink" alt="Gallery thumbnail">
+                                            </a>
+                                        </ng-container>
+                                        <ng-template #emptyPhotoBox>
+                                            <a class="gallery-item rounded-1 rounded-md-2" role="button" (click)="openOffersPhotoInLightBox(offer.offerId, 0)">
+                                                <img src="assets/img/real-estate/empty-image.png" alt="Default photo">
+                                            </a>
+                                        </ng-template>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Post content-->
+                    <section class="container mb-5 pb-1">
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="col-md-7 mb-md-0 mb-4">
+                                    <span class="badge bg-success me-2 mb-3">Verified</span>
+                                    <span class="badge bg-info me-2 mb-3">New</span>
+                                </div>
+                                <h2 class="h3 mb-4 pb-4 border-bottom">$2,000<span class="d-inline-block ms-1 fs-base fw-normal text-body">/month</span></h2>
+                                <!-- Property Details-->
+                                <div class="mb-4 pb-md-3">
+                                    <h3 class="h4">Property Details</h3>
+                                    <ul class="list-unstyled mb-0">
+                                        <li><b>Type: </b>apartment</li>
+                                        <li><b>Apartment area: </b>56 sq.m</li>
+                                        <li><b>Built: </b>2015</li>
+                                        <li><b>Bedrooms: </b>4</li>
+                                        <li><b>Bathrooms: </b>2</li>
+                                        <li><b>Parking places: </b>2</li>
+                                        <li><b>Pets allowed: </b>cats only</li>
+                                    </ul>
+                                </div>
+                                <!-- Amenities-->
+                                <div class="mb-4 pb-md-3">
+                                    <h3 class="h4">Amenities</h3>
+                                    <ul class="list-unstyled row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-1 mb-1 text-nowrap">
+                                        <li class="col"><i class="fi-wifi mt-n1 me-2 fs-lg align-middle"></i>WiFi</li>
+                                        <li class="col"><i class="fi-thermometer mt-n1 me-2 fs-lg align-middle"></i>Heating</li>
+                                        <li class="col"><i class="fi-dish mt-n1 me-2 fs-lg align-middle"></i>Dishwasher</li>
+                                        <li class="col"><i class="fi-parking mt-n1 me-2 fs-lg align-middle"></i>Parking place</li>
+                                        <li class="col"><i class="fi-snowflake mt-n1 me-2 fs-lg align-middle"></i>Air conditioning</li>
+                                        <li class="col"><i class="fi-iron mt-n1 me-2 fs-lg align-middle"></i>Iron</li>
+                                        <li class="col"><i class="fi-tv mt-n1 me-2 fs-lg align-middle"></i>TV</li>
+                                        <li class="col"><i class="fi-laundry mt-n1 me-2 fs-lg align-middle"></i>Laundry</li>
+                                        <li class="col"><i class="fi-cctv mt-n1 me-2 fs-lg align-middle"></i>Security cameras</li>
+                                    </ul>
+                                    <!-- offer description Overview-->
+                                    <div class="mt-5 mb-4 pb-md-3">
+                                        <h3 class="h4">Overview</h3>
+                                        <p class="mb-1">
+                                            <span>
+                                                {{ offer.description.slice(0, limitOfferDescriptionLength) }}
+                                            </span>
+                                            <span *ngIf="offer.description.length > limitOfferDescriptionLength" class="collapse" [id]="'seeMoreOverview_' + offer.offerId"
+                                                [ngClass]="{'show': offerDescriptionExpanded[offer.offerId]}">
+                                                {{ offer.description.slice(limitOfferDescriptionLength) }}
+                                            </span>
+                                        </p>
+                                        <a class="collapse-label collapsed" (click)="toggleOfferDescriptionLength(offer.offerId)" 
+                                        [attr.aria-expanded]="offerDescriptionExpanded[offer.offerId] ? 'true' : 'false'" 
+                                        data-bs-toggle="collapse" [attr.data-bs-label-collapsed]="offerDescriptionExpanded[offer.offerId] ? 'Show less' : 'Show more'" 
+                                        role="button" aria-expanded="false" [attr.aria-controls]="'seeMoreOverview_' + offer.offerId"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-5 mt-lg-5 mt-md-5 pt-lg-5 pt-md-5">
+                                <div class="mt-lg-3 mt-md-3">
+                                    <app-company-phone [phone]="company.phone"></app-company-phone>
+                                    <hr class="mt-2 mb-2">
+                                    <app-company-phone [phone]="company.phone"></app-company-phone>
+                                    <hr class="mt-2 mb-2">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

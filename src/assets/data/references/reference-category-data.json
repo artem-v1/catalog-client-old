@@ -1,0 +1,75 @@
+
+[
+    {
+        "id": 1,
+        "order": 1,
+        "catKey": "cat_for_adults",
+        "catValue": "Angebote für Erwachsene 18+"
+    },
+    {
+        "id": 2,
+        "order": 2,
+        "catKey": "cat_sauna_type",
+        "catValue": "Art der Sauna"
+    },
+    {
+        "id": 3,
+        "order": 3,
+        "catKey": "cat_complex_type",
+        "catValue": "Art des Komplexes"
+    },
+    {
+        "id": 4,
+        "order": 4,
+        "catKey": "cat_food",
+        "catValue": "Essen"
+    },
+    {
+        "id": 5,
+        "order": 5,
+        "catKey": "cat_for_who",
+        "catValue": "Für wen"
+    },
+    {
+        "id": 6,
+        "order": 6,
+        "catKey": "cat_parking",
+        "catValue": "Parkplatz"
+    },
+    {
+        "id": 7,
+        "order": 7,
+        "catKey": "cat_space",
+        "catValue": "Raum"
+    },
+    {
+        "id": 8,
+        "order": 8,
+        "catKey": "cat_comfort_type",
+        "catValue": "Typ"
+    },
+    {
+        "id": 9,
+        "order": 9,
+        "catKey": "cat_water_service",
+        "catValue": "Wasser-Dienstleistungen und Unterhaltung"
+    },
+    {
+        "id": 10,
+        "order": 10,
+        "catKey": "cat_for_what",
+        "catValue": "Wofür"
+    },
+    {
+        "id": 11,
+        "order": 11,
+        "catKey": "cat_Additional",
+        "catValue": "Zusatzleistungen"
+    },
+    {
+        "id": 12,
+        "order": 12,
+        "catKey": "cat_hotel",
+        "catValue": "Übernachtung"
+    }
+]

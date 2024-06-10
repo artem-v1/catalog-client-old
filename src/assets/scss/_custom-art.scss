@@ -1,0 +1,69 @@
+//
+// Custom style by Artem Vovk
+// --------------------------------------------------
+
+
+//custom bg
+.custom-art-bg-gray {
+    background-color: #E2E2EF;
+}
+
+.custom-art-bg-blue {
+    background-color: hsl(240, 46%, 80%);
+}
+
+.custom-art-color-light {
+    color: #1b1b1b;
+}
+
+.fixed {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 25%; /* Ширина левой колонки, настройте под свои нужды */
+    z-index: 1000;
+  }
+
+.custom-float-right {
+   float: right;
+   width: 50%;
+}
+
+@media (max-width: 991px) {
+    .display-none-before-992px {
+      display: none; /* или другие стили, если вы хотите скрыть элемент на меньших экранах */
+    }
+  }
+
+  @media (min-width: 992px) {
+    .display-none-after-992px {
+      display: none; /* или другие стили, если вы хотите скрыть элемент на меньших экранах */
+    }
+  }
+
+.custom-nav-scroll {
+    max-height: 65vh; 
+    overflow-y: auto;
+}
+
+.custom-active:hover{
+  background-color: #fd5631;
+}
+
+.custom-letter-spacing {
+  letter-spacing: 7px; 
+}
+
+.thumbnails{
+  height: 50px;
+}
+
+.company-description-short {
+  height: 40px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.company-description-expanded {
+  height: auto;
+}
+

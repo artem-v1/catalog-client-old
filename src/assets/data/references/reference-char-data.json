@@ -1,0 +1,391 @@
+[ {
+    "id" : 1,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_1",
+    "charValue" : "Erotische Massage",
+    "icon" : "check_circle"
+  }, {
+    "id" : 2,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_2",
+    "charValue" : "Mädels",
+    "icon" : "check_circle"
+  }, {
+    "id" : 3,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_3",
+    "charValue" : "Swing",
+    "icon" : "check_circle"
+  }, {
+    "id" : 4,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_4",
+    "charValue" : "Nudismus",
+    "icon" : "check_circle"
+  }, {
+    "id" : 5,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_5",
+    "charValue" : "Erotische Partys",
+    "icon" : "check_circle"
+  }, {
+    "id" : 6,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_6",
+    "charValue" : "Sexpartys",
+    "icon" : "check_circle"
+  }, {
+    "id" : 7,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_7",
+    "charValue" : "Spielzimmer",
+    "icon" : "check_circle"
+  }, {
+    "id" : 8,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_8",
+    "charValue" : "Spielplätze",
+    "icon" : "check_circle"
+  }, {
+    "id" : 9,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_9",
+    "charValue" : "Privatraum",
+    "icon" : "check_circle"
+  }, {
+    "id" : 10,
+    "catKey" : "cat_for_adults",
+    "charKey" : "const_10",
+    "charValue" : "Angebote für LSBTIQ+ Gemeinschaft",
+    "icon" : "check_circle"
+  }, {
+    "id" : 11,
+    "catKey" : "cat_sauna_type",
+    "charKey" : "const_1",
+    "charValue" : "Banja",
+    "icon" : "check_circle"
+  }, {
+    "id" : 12,
+    "catKey" : "cat_sauna_type",
+    "charKey" : "const_2",
+    "charValue" : "Sauna",
+    "icon" : "check_circle"
+  }, {
+    "id" : 13,
+    "catKey" : "cat_sauna_type",
+    "charKey" : "const_3",
+    "charValue" : "Finnische Sauna",
+    "icon" : "check_circle"
+  }, {
+    "id" : 14,
+    "catKey" : "cat_sauna_type",
+    "charKey" : "const_4",
+    "charValue" : "Russische Banja",
+    "icon" : "check_circle"
+  }, {
+    "id" : 15,
+    "catKey" : "cat_sauna_type",
+    "charKey" : "const_5",
+    "charValue" : "Kryosauna – Eissauna",
+    "icon" : "check_circle"
+  }, {
+    "id" : 16,
+    "catKey" : "cat_sauna_type",
+    "charKey" : "const_6",
+    "charValue" : "Infrarotsauna",
+    "icon" : "check_circle"
+  }, {
+    "id" : 17,
+    "catKey" : "cat_sauna_type",
+    "charKey" : "const_7",
+    "charValue" : "Fass Sauna",
+    "icon" : "check_circle"
+  }, {
+    "id" : 18,
+    "catKey" : "cat_complex_type",
+    "charKey" : "const_1",
+    "charValue" : "Wellness Hotel",
+    "icon" : "check_circle"
+  }, {
+    "id" : 19,
+    "catKey" : "cat_complex_type",
+    "charKey" : "const_2",
+    "charValue" : "Sauna Club",
+    "icon" : "check_circle"
+  }, {
+    "id" : 20,
+    "catKey" : "cat_complex_type",
+    "charKey" : "const_3",
+    "charValue" : "Sport and Health Complex",
+    "icon" : "check_circle"
+  }, {
+    "id" : 21,
+    "catKey" : "cat_complex_type",
+    "charKey" : "const_4",
+    "charValue" : "Private Sauna Rentals",
+    "icon" : "check_circle"
+  }, {
+    "id" : 22,
+    "catKey" : "cat_complex_type",
+    "charKey" : "const_5",
+    "charValue" : "Eco-Retreats with Sauna",
+    "icon" : "check_circle"
+  }, {
+    "id" : 23,
+    "catKey" : "cat_complex_type",
+    "charKey" : "const_6",
+    "charValue" : "Mobile Sauna rentals",
+    "icon" : "check_circle"
+  }, {
+    "id" : 24,
+    "catKey" : "cat_complex_type",
+    "charKey" : "const_7",
+    "charValue" : "Thermen",
+    "icon" : "check_circle"
+  }, {
+    "id" : 25,
+    "catKey" : "cat_complex_type",
+    "charKey" : "const_8",
+    "charValue" : "ander",
+    "icon" : "check_circle"
+  }, {
+    "id" : 26,
+    "catKey" : "cat_food",
+    "charKey" : "const_1",
+    "charValue" : "Café",
+    "icon" : "check_circle"
+  }, {
+    "id" : 27,
+    "catKey" : "cat_food",
+    "charKey" : "const_2",
+    "charValue" : "Restaurant",
+    "icon" : "check_circle"
+  }, {
+    "id" : 28,
+    "catKey" : "cat_food",
+    "charKey" : "const_3",
+    "charValue" : "Bar",
+    "icon" : "check_circle"
+  }, {
+    "id" : 29,
+    "catKey" : "cat_for_who",
+    "charKey" : "const_1",
+    "charValue" : "Für die ganze Familie",
+    "icon" : "check_circle"
+  }, {
+    "id" : 30,
+    "catKey" : "cat_for_who",
+    "charKey" : "const_2",
+    "charValue" : "Für Kinder",
+    "icon" : "check_circle"
+  }, {
+    "id" : 31,
+    "catKey" : "cat_for_who",
+    "charKey" : "const_3",
+    "charValue" : "Für Paare",
+    "icon" : "check_circle"
+  }, {
+    "id" : 32,
+    "catKey" : "cat_for_who",
+    "charKey" : "const_4",
+    "charValue" : "Für Gruppen/Freunde",
+    "icon" : "check_circle"
+  }, {
+    "id" : 33,
+    "catKey" : "cat_for_who",
+    "charKey" : "const_5",
+    "charValue" : "für die Einsamen",
+    "icon" : "check_circle"
+  }, {
+    "id" : 34,
+    "catKey" : "cat_parking",
+    "charKey" : "const_1",
+    "charValue" : "Parkplatz auf dem Gelände",
+    "icon" : "check_circle"
+  }, {
+    "id" : 35,
+    "catKey" : "cat_parking",
+    "charKey" : "const_2",
+    "charValue" : "Kostenloser Parkplatz",
+    "icon" : "check_circle"
+  }, {
+    "id" : 36,
+    "catKey" : "cat_parking",
+    "charKey" : "const_3",
+    "charValue" : "Parkplatz in der Nähe",
+    "icon" : "check_circle"
+  }, {
+    "id" : 37,
+    "catKey" : "cat_parking",
+    "charKey" : "const_4",
+    "charValue" : "Bezahlter Parkplatz",
+    "icon" : "check_circle"
+  }, {
+    "id" : 38,
+    "catKey" : "cat_space",
+    "charKey" : "const_1",
+    "charValue" : "Öffentlich",
+    "icon" : "check_circle"
+  }, {
+    "id" : 39,
+    "catKey" : "cat_space",
+    "charKey" : "const_2",
+    "charValue" : "Privat - ohne Fremde",
+    "icon" : "check_circle"
+  }, {
+    "id" : 40,
+    "catKey" : "cat_space",
+    "charKey" : "const_3",
+    "charValue" : "Öffentlich mit Privatbereichen",
+    "icon" : "check_circle"
+  }, {
+    "id" : 41,
+    "catKey" : "cat_space",
+    "charKey" : "const_4",
+    "charValue" : "Clubraum mit beschränktem Zugang",
+    "icon" : "check_circle"
+  }, {
+    "id" : 42,
+    "catKey" : "cat_comfort_type",
+    "charKey" : "const_1",
+    "charValue" : "Economy",
+    "icon" : "check_circle"
+  }, {
+    "id" : 43,
+    "catKey" : "cat_comfort_type",
+    "charKey" : "const_2",
+    "charValue" : "Komfort",
+    "icon" : "check_circle"
+  }, {
+    "id" : 44,
+    "catKey" : "cat_comfort_type",
+    "charKey" : "const_3",
+    "charValue" : "Premium",
+    "icon" : "check_circle"
+  }, {
+    "id" : 45,
+    "catKey" : "cat_water_service",
+    "charKey" : "const_1",
+    "charValue" : "Dusche",
+    "icon" : "check_circle"
+  }, {
+    "id" : 46,
+    "catKey" : "cat_water_service",
+    "charKey" : "const_2",
+    "charValue" : "Pool",
+    "icon" : "check_circle"
+  }, {
+    "id" : 47,
+    "catKey" : "cat_water_service",
+    "charKey" : "const_3",
+    "charValue" : "Fluss",
+    "icon" : "check_circle"
+  }, {
+    "id" : 48,
+    "catKey" : "cat_water_service",
+    "charKey" : "const_4",
+    "charValue" : "See",
+    "icon" : "check_circle"
+  }, {
+    "id" : 49,
+    "catKey" : "cat_water_service",
+    "charKey" : "const_5",
+    "charValue" : "Bade",
+    "icon" : "check_circle"
+  }, {
+    "id" : 50,
+    "catKey" : "cat_water_service",
+    "charKey" : "const_6",
+    "charValue" : "Whirlpool",
+    "icon" : "check_circle"
+  }, {
+    "id" : 51,
+    "catKey" : "cat_water_service",
+    "charKey" : "const_7",
+    "charValue" : "Nutur Thermen",
+    "icon" : "check_circle"
+  }, {
+    "id" : 52,
+    "catKey" : "cat_for_what",
+    "charKey" : "const_1",
+    "charValue" : "Entspannung",
+    "icon" : "check_circle"
+  }, {
+    "id" : 53,
+    "catKey" : "cat_for_what",
+    "charKey" : "const_2",
+    "charValue" : "Gesundheit",
+    "icon" : "check_circle"
+  }, {
+    "id" : 54,
+    "catKey" : "cat_for_what",
+    "charKey" : "const_3",
+    "charValue" : "Konzerte und Shows",
+    "icon" : "check_circle"
+  }, {
+    "id" : 55,
+    "catKey" : "cat_for_what",
+    "charKey" : "const_4",
+    "charValue" : "Party",
+    "icon" : "check_circle"
+  }, {
+    "id" : 56,
+    "catKey" : "cat_for_what",
+    "charKey" : "const_5",
+    "charValue" : "Bekanntschaft",
+    "icon" : "check_circle"
+  }, {
+    "id" : 57,
+    "catKey" : "cat_Additional",
+    "charKey" : "const_1",
+    "charValue" : "Massage",
+    "icon" : "check_circle"
+  }, {
+    "id" : 58,
+    "catKey" : "cat_Additional",
+    "charKey" : "const_2",
+    "charValue" : "Spa",
+    "icon" : "check_circle"
+  }, {
+    "id" : 59,
+    "catKey" : "cat_Additional",
+    "charKey" : "const_3",
+    "charValue" : "Kosmetiker",
+    "icon" : "check_circle"
+  }, {
+    "id" : 60,
+    "catKey" : "cat_hotel",
+    "charKey" : "const_1",
+    "charValue" : "Bett im Schlafsaal",
+    "icon" : "check_circle"
+  }, {
+    "id" : 61,
+    "catKey" : "cat_hotel",
+    "charKey" : "const_2",
+    "charValue" : "Einzelzimmer",
+    "icon" : "check_circle"
+  }, {
+    "id" : 62,
+    "catKey" : "cat_hotel",
+    "charKey" : "const_3",
+    "charValue" : "Doppelzimmer",
+    "icon" : "check_circle"
+  }, {
+    "id" : 63,
+    "catKey" : "cat_hotel",
+    "charKey" : "const_4",
+    "charValue" : "Familienzimmer",
+    "icon" : "check_circle"
+  }, {
+    "id" : 64,
+    "catKey" : "cat_hotel",
+    "charKey" : "const_5",
+    "charValue" : "Camping",
+    "icon" : "check_circle"
+  }, {
+    "id" : 65,
+    "catKey" : "cat_hotel",
+    "charKey" : "const_6",
+    "charValue" : "Zeltplatz",
+    "icon" : "check_circle"
+  } ]
