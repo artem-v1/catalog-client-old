@@ -33,6 +33,7 @@ The project is a catalog where users can create a web page for their company. Th
     - Set up billing (online payment processing).
     - Create a form for publishing company information.
     - Implement authentication via Keycloak.
+    - Adaptation for mobile devices
 
 
 
