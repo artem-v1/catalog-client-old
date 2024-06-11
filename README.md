@@ -5,9 +5,9 @@
 To demonstrate my web application development skills to potential employers.
 
 ## Scope
-Backend: Java 17, Spring Boot, Hibernate, Liquibase (hosted separately in the same GitHub account)
-Frontend: Angular 17
-Database: PostgreSQL (for Database backup loading - https://drive.google.com/drive/folders/1CdQfjHnL1k06C6IhJvxfW__enuskEPK1?usp=drive_link )
+- Frontend: Angular 17
+- Backend: Java 17, Spring Boot, Hibernate, Liquibase (hosted separately in the same GitHub account)
+- Database: PostgreSQL (for Database backup loading - https://drive.google.com/drive/folders/1CdQfjHnL1k06C6IhJvxfW__enuskEPK1?usp=drive_link )
 
 ## Description
 The project is a catalog where users can create a web page for their company. The page is designed as a comprehensive landing page with detailed information about the company and commercial offers. Users can search for companies based on geolocation and various characteristics. The application is currently in development.
