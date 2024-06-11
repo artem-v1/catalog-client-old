@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, Subscription, of, switchMap } from 'rxjs';
 import { CompanyDTO } from 'src/app/dtos/company-dtos/company.dto';

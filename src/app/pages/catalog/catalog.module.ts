@@ -36,7 +36,6 @@ import { RentComponent } from './rent/rent.component';
 import { SingleV1Component } from './single-v1/single-v1.component';
 import { SingleV2Component } from './single-v2/single-v2.component';
 import { SaleComponent } from './sale/sale.component';
-import { SingleVArtComponent } from './single-v-art/single-v-art.component';
 import { CompanyFullDataComponent } from './company-full-data/company-full-data.component';
 import { CharCategoryTransformPipe } from 'src/app/pipes/char-category-transform.pipe';
 
@@ -44,7 +43,6 @@ import { CharCategoryTransformPipe } from 'src/app/pipes/char-category-transform
   declarations: [
     RentComponent,
     CompanyFullDataComponent,
-    SingleVArtComponent,
     SingleV1Component,
     SingleV2Component,
     SaleComponent,
