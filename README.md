@@ -1,3 +1,49 @@
+
+# Project: Frontend for a Company Catalog Web Application
+
+## Objective
+To demonstrate my web application development skills to potential employers.
+
+## Scope
+Backend: Java 17, Spring Boot, Hibernate, Liquibase (hosted separately in the same GitHub account)
+Frontend: Angular 17
+Database: PostgreSQL (for Database backup loading - https://drive.google.com/drive/folders/1CdQfjHnL1k06C6IhJvxfW__enuskEPK1?usp=drive_link )
+
+## Description
+The project is a catalog where users can create a web page for their company. The page is designed as a comprehensive landing page with detailed information about the company and commercial offers. Users can search for companies based on geolocation and various characteristics. The application is currently in development.
+
+## Current Frontend Features
+- Template-Based Development: The frontend development did not start from scratch. Initially, I purchased a real estate catalog template and am repurposing it into a company catalog for a specific niche.
+- CompanyFullDataComponent: Working on creating a detailed company information page.
+    - Implemented data retrieval from the backend and rendering on the page.
+    - Created functionality for opening and browsing photos in a modal window.
+    - Displayed company offers and navigated through offers using corresponding links on the page.
+    - Added a button that reveals the full phone number of the company to track conversions of page visitors wanting to call.
+    - Displayed company characteristics with values shown on the page from the reference by key (implemented via an async pipe).
+    - Initially, descriptions and characteristics are shown in a truncated form. Clicking "show more" reveals the full information.
+    - Implemented caching on the frontend for the characteristics reference.
+
+## Planned Features
+- CompanyFullDataComponent:
+    - Display offer characteristics.
+    - Set up reviews for the overall application.
+    - Overall Application:
+- Create a form for searching companies by characteristics and geolocation.
+    - Create a user dashboard.
+    - Set up billing (online payment processing).
+    - Create a form for publishing company information.
+    - Implement authentication via Keycloak.
+
+
+
+#
+#
+#
+#
+#
+#
+#
+
 # CATALOG CLIENT
 
 This projeckt is as an Example of my skills
