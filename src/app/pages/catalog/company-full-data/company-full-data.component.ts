@@ -155,11 +155,6 @@ export class CompanyFullDataComponent {
     return this.company.companyCharacteristics
       .map(characteristic => characteristic.charCategory)
       .filter((value, index, self) => self.indexOf(value) === index);
-    /*
-    return this.company.companyCharacteristics
-      .map(characteristic => characteristic.charCategory)
-      .filter((value, index, self) => self.indexOf(value) === index);
-      */
   }
 
 

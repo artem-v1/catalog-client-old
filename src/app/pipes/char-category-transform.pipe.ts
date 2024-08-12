@@ -1,8 +1,6 @@
 import { Pipe, PipeTransform } from "@angular/core";
-import { Observable, map, of, switchMap } from "rxjs";
-import { ReferenceInterface } from "../dtos/company-dtos/constant-dtos/reference.inteface";
+import { Observable} from "rxjs";
 import { ReferenceCacheService } from "../services/references/reference-cache.service";
-import { CompanyCharacteristicDTO } from "../dtos/company-dtos/company-characteristic.dto";
 
 @Pipe({
     name: 'charCategoryTransformToValue'
